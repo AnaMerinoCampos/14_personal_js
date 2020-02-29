@@ -15,14 +15,14 @@
             width: 100%;
         }
         ul li{
-            list-style-type: none;
             width: 400px;
+            list-style-type: none;
             height: auto;
-            background: cornflowerblue;
             overflow: hidden;
+            text-align: center;
             display: flex;
             flex-direction: column;
-            text-align: center;
+            background: cornflowerblue;
         }
         ul li img{
             object-fit: cover;
@@ -30,21 +30,21 @@
             object-position: center;
         }
         ul li a{
-            border: 2px solid orange;
             text-decoration: none;
+            border: 1.5px solid orange;
             height: 60px;
             width: 100%;
             padding: 10px;
-            background-color: cornflowerblue;
             font-size: 2em;
             color: darkblue;
+            background-color: cornflowerblue;
         }
     </style>
      <script src="js/interaction.js"></script> 
  <script type="text/javascript"> 
         $(document).ready(function(){
             $("img").hide();
-            $("li:first-child a").click(function(){
+                $("li:first-child a").click(function(){
                 $("li:first-child img").fadeIn();
             });
             $("li:first-child a").dblclick(function(){
@@ -68,7 +68,7 @@
             $("li:nth-child(4) a").dblclick(function(){
                 $("li:nth-child(4) img").fadeOut();
             });
-        });
+            });
     </script>
 </head>
 <body>
